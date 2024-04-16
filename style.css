@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Martian Mono", monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(199, 245, 255);
+  position: sticky;
+  top: 0;
+}
+
+.menu a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.menu a:hover {
+  transition: 0.5s;
+  font-size: 20px;
+  color: rgb(193, 136, 31);
+}
+
+.profile {
+  padding: 30px;
+  background-image: url(https://www.shutterstock.com/image-vector/vector-illustration-cloudy-sky-anime-600nw-1086086774.jpg);
+  background-size: cover;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcome h1 {
+  text-align: center;
+  font-size: 50px;
+  transition: 0.5s;
+}
+
+.welcome h1:hover {
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+}
+
+.img-profile {
+  display: flex;
+  justify-content: center;
+  margin-top: -25px;
+}
+
+.btn {
+  margin-top: -20px;
+  text-align: center;
+}
+
+.btn a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  width: 25%;
+  padding: 12px;
+  transition: 0.5s;
+  background-color: rgb(255, 239, 173);
+}
+
+.btn a:hover {
+  transition: 0.5s;
+  background-color: rgb(196, 216, 255);
+  width: 21%;
+}

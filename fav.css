@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Martian Mono", monospace;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(255, 196, 251);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.menu a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.menu a:hover {
+  transition: 0.5s;
+  font-size: 20px;
+  color: rgb(193, 136, 31);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto auto;
+  /* border: 1px solid black; */
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  margin-top: 30px;
+  opacity: 0; /* Initially hide content */
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); /* Slide down from -50px */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Slide down to 0 */
+  }
+}
+
+/* เพิ่ม Delay ตั้งแต่อันแรกจนอันสุดท้าย */
+
+.c1 {
+  animation-delay: 0s;
+}
+
+.c2 {
+  animation-delay: 0.6s; /* Delay c2 animation by 0.5s */
+}
+.c3 {
+  animation-delay: 1.2s; /* Delay c3 animation by 1s */
+}
+
+.title {
+  width: 20%;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: antiquewhite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title h2 {
+  font-size: 30px;
+}
+
+.video img {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.details h5 {
+  font-size: 20px;
+}

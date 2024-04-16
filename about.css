@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Martian Mono", monospace;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: changeBackground 15s infinite; /* แสดง animation ที่ชื่อ changeBackground ในระยะเวลา 10 วินาที และเรียกใช้ซ้ำไปเรื่อยๆ */
+}
+
+@keyframes changeBackground {
+  0% {
+    background-image: url(https://images5.alphacoders.com/116/1166282.jpg);
+  }
+  25% {
+    background-image: url(/2.jpg); /* เปลี่ยนเป็นภาพที่ 2 ที่ 25% ของ animation */
+  }
+  50% {
+    background-image: url(/3-1.jpg); /* เปลี่ยนเป็นภาพที่ 3 ที่ 50% ของ animation */
+  }
+  75% {
+    background-image: url(/4.jpg); /* เปลี่ยนเป็นภาพที่ 4 ที่ 75% ของ animation */
+  }
+  100% {
+    background-image: url(/5.png); /* เปลี่ยนเป็นภาพที่ 5 ที่สิ้นสุดของ animation */
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: rgb(248, 255, 157);
+  position: sticky;
+  top: 0;
+}
+
+.menu a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.menu a:hover {
+  transition: 0.5s;
+  font-size: 20px;
+  color: rgb(193, 136, 31);
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+  align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+  height: 80vh;
+}
+
+.aboutMe {
+  margin-top: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.aboutMe h2 {
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  transition: 1s;
+  background-color: beige;
+  opacity: 0.85;
+  padding: 12px;
+  border-radius: 30px;
+}
+
+.aboutMe h2:hover {
+  background-color: rgb(255, 179, 80);
+  color: rgb(37, 36, 36);
+  font-size: 45px;
+  transition: 1s;
+}
+
+.aboutMe input {
+  margin-top: 40px;
+  margin-right: 30px;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#btn-no {
+  cursor: pointer;
+}
+
+.aboutMe input:hover {
+  background-color: #2474aa;
+}
+
+.container2 {
+  display: none;
+}
+
+.about {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.img {
+  margin-left: 50px;
+  width: 40%;
+  max-width: 100%;
+}
+
+.img img {
+  width: 70%;
+  border-radius: 100%;
+  background-color: rgb(235, 235, 235);
+  box-shadow: 7px 7px 5px rgb(169, 169, 169);
+}
+
+.description {
+  background-color: white;
+  padding: 15px;
+  border-radius: 7px;
+  line-height: 40px;
+}
+
+.description p {
+  font-size: 13px;
+  line-height: 25px;
+}
