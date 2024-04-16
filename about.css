@@ -10,25 +10,33 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   animation: changeBackground 10s infinite; /* แสดง animation ที่ชื่อ changeBackground ในระยะเวลา 10 วินาที และเรียกใช้ซ้ำไปเรื่อยๆ */
-  width: 100vw; /* ทำให้กว้างเต็มจอ */
-  height: 100vh; /* ทำให้สูงเต็มจอ */
 }
 
 @keyframes changeBackground {
   0% {
     background-image: url(https://images5.alphacoders.com/116/1166282.jpg);
+    width: 100vw; /* ทำให้กว้างเต็มจอ */
+    height: 100vh; /* ทำให้สูงเต็มจอ */
   }
   25% {
     background-image: url(/2.jpg); /* เปลี่ยนเป็นภาพที่ 2 ที่ 25% ของ animation */
+    width: 100vw; /* ทำให้กว้างเต็มจอ */
+    height: 100vh; /* ทำให้สูงเต็มจอ */
   }
   50% {
     background-image: url(/3-1.jpg); /* เปลี่ยนเป็นภาพที่ 3 ที่ 50% ของ animation */
+    width: 100vw; /* ทำให้กว้างเต็มจอ */
+    height: 100vh; /* ทำให้สูงเต็มจอ */
   }
   75% {
     background-image: url(/4.jpg); /* เปลี่ยนเป็นภาพที่ 4 ที่ 75% ของ animation */
+    width: 100vw; /* ทำให้กว้างเต็มจอ */
+    height: 100vh; /* ทำให้สูงเต็มจอ */
   }
   100% {
     background-image: url(/5.png); /* เปลี่ยนเป็นภาพที่ 5 ที่สิ้นสุดของ animation */
+    width: 100vw; /* ทำให้กว้างเต็มจอ */
+    height: 100vh; /* ทำให้สูงเต็มจอ */
   }
 }
 
