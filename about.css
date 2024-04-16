@@ -9,7 +9,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: changeBackground 15s infinite; /* แสดง animation ที่ชื่อ changeBackground ในระยะเวลา 10 วินาที และเรียกใช้ซ้ำไปเรื่อยๆ */
+  animation: changeBackground 10s infinite; /* แสดง animation ที่ชื่อ changeBackground ในระยะเวลา 10 วินาที และเรียกใช้ซ้ำไปเรื่อยๆ */
+  width: 100vw; /* ทำให้กว้างเต็มจอ */
+  height: 100vh; /* ทำให้สูงเต็มจอ */
 }
 
 @keyframes changeBackground {
