@@ -32,10 +32,19 @@ nav {
 }
 
 .profile {
-  padding: 30px;
+  padding: 0;
+  margin: 0; 
+  width: 100vw; /* ทำให้กว้างเต็มจอ */
+  height: 100vh; /* ทำให้สูงเต็มจอ */
   background-image: url(https://www.shutterstock.com/image-vector/vector-illustration-cloudy-sky-anime-600nw-1086086774.jpg);
   background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 
 .welcome {
   text-align: center;
